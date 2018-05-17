@@ -27,11 +27,10 @@ public class Examen {
     // -----------------------------------------------------
     // Usa este run para tus pruebas
     public void run() {
-        // Tus pruebas aquí.
 
         // System.out.format("Coste de caseta: %d%n", calcularCosteTotalMateriales("caseta.csv"));
         // obtenerLosMasHabladores("segur1.bin", "segur1out.bin");
-        // System.out.format("Radio medio mayores de 20000: %.2f%n", radioMedio(20000));
+        // System.out.format("Radio medio mayores de 20000: %.2f%n", radioMedio(20000, "jdbc:h2:tcp://localhost/~/sistemasolar"));
     }
 
     public static void main(String[] args) {
