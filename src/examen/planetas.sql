@@ -3,7 +3,7 @@
 
 CREATE TABLE planeta (
     nombre VARCHAR(15) PRIMARY KEY,
-    radio INT
+    radio DOUBLE
 );
 INSERT INTO planeta(nombre, radio) VALUES('Mercurio' , 2439);
 INSERT INTO planeta(nombre, radio) VALUES('Venus',6051);
