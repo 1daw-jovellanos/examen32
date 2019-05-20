@@ -25,7 +25,6 @@ public class Examen {
         final String URL = "jdbc:h2:tcp://localhost/./sistemasolar";
         final String USER = "sa";
         final String PASS = "sa";
-        
     }
 
     // -----------------------------------------------------
