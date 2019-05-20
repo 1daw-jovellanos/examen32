@@ -1,5 +1,4 @@
--- Ejecuta este script para crear una bd con la url
--- jdbc:h2:tcp://localhost/~/bdplanetas
+-- Ejecuta este script para crear la bd
 
 CREATE TABLE planeta (
     nombre VARCHAR(15) PRIMARY KEY,

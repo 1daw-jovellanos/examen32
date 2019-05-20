@@ -1,36 +1,45 @@
-
 package examen;
 
 import java.io.*;
 import java.util.*;
 import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Examen {
 
-    // Ejercicio1 
+    // Ejercicio2 
     public double calcularCosteTotalMateriales(String filename) {
         // Tu código aquí
         return 0; // Cambia esto;
     }
 
-    // Ejercicio 2
-    public void obtenerLosMasHabladores(String fileNameEntrada, String fileNameSalida) {
+    // Ejercicio 3
+    public void copiarEnMayusculas(String nombreFicheroEntrada, String nombreFicheroSalida)
+            throws IOException {
         // tu codigo aquí
     }
 
-    // Ejercicio 3
-    public double radioMedio(int radioMinimo, String URL) {
-        // Tu código aquí
-        return 0;
+    // Ejercicio 4
+    public void imprimirGrandes(int radioMinimo) {
+        final String URL = "jdbc:h2:tcp://localhost/./sistemasolar";
+        final String USER = "sa";
+        final String PASS = "sa";
+        
     }
 
     // -----------------------------------------------------
     // Usa este run para tus pruebas
-    public void run() {
+    public void run(){
 
-        // System.out.format("Coste de caseta: %d%n", calcularCosteTotalMateriales("caseta.csv"));
-        // obtenerLosMasHabladores("segur1.bin", "segur1out.bin");
-        // System.out.format("Radio medio mayores de 20000: %.2f%n", radioMedio(20000, "jdbc:h2:tcp://localhost/~/sistemasolar"));
+        System.out.format("Coste de caseta: %d%n", calcularCosteTotalMateriales("caseta.csv"));
+        try {
+            copiarEnMayusculas("poema.txt", "poema-mays.txt");
+        } catch (IOException ex) {
+            System.err.println("copiarEnMayúsculas generó una excepción.");
+            ex.printStackTrace();
+        }
+        imprimirGrandes(20000);
     }
 
     public static void main(String[] args) {
