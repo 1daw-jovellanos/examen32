@@ -1,0 +1,5 @@
+Contesta aquí al ejercicio 1. 
+Cada traza emite uno o varios carácteres en una línea
+
+1A:
+1B:
