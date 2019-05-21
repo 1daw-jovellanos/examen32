@@ -31,7 +31,7 @@ public class Examen {
     // Usa este run para tus pruebas
     public void run(){
 
-        System.out.format("Coste de caseta: %d%n", calcularCosteTotalMateriales("caseta.csv"));
+        System.out.format("Coste de caseta: %f%n", calcularCosteTotalMateriales("caseta.csv"));
         try {
             copiarEnMayusculas("poema.txt", "poema-mays.txt");
         } catch (IOException ex) {
